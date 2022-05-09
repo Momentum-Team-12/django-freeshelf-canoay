@@ -23,5 +23,6 @@ urlpatterns = [
     path('', books_views.list_books, name='list_books'),
     path('books/<int:pk>',
          books_views.book_detail,
-         name='book_detail')
+         name='book_detail'),
+    path('accounts/login/', books_views.list_books, name ='login'),
 ]

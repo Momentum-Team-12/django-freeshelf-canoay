@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
+
+
 {% block content %}
 <h1>All Book Entries</h1>
-
+<a href="{% url 'login'  %}"> Log in</a>
 <div class="flex flex-wrap">
     {% for book in books %}
     <div class="w-33 pa3">
@@ -16,6 +18,7 @@
                 {{ book.created_at }} <br />
                 <a href="{% url 'book_detail' book.pk %}"> Read More</a>
             </div>
+                
         </div>
 
     </div>
