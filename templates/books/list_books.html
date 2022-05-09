@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Book Entries</h1>
+
+<div class="flex flex-wrap">
+    {% for book in books %}
+    <div class="w-33 pa3">
+
+        <div class="flex">
+            <div class="pr2"></div>
+            <div>
+                <h2>{{ book.title }}</h2>
+                <!-- <img src="{{ album.image }}"> -->
+                {{ book.author }}<br />
+                {{ book.created_at }} <br />
+                <a href="{% url 'book_detail' book.pk %}"> Read More</a>
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

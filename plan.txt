@@ -1,0 +1,12 @@
+Goal 1
+1. Create book model
+    -title
+    -author
+    -description
+    -url(detail)*
+2. create book homepage that shows all book entries
+    -urls 
+    -views
+    -templates
+3. can add, edit, and delete books in admin
+4. Books displayed in order from the top
