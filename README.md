@@ -58,10 +58,10 @@ Once you have registration and login, users should be able to nark books as thei
 
 - Show the number of times a book has been favorited on its entry.
 
-
 ### 🌶 Spicy Features
 
 If you reach the four goals above, challenge yourself to implement these additional features.
+
 #### 🌶 Spicy Goal 1: Add user comments
 
 Users should be able to comment on books. Each book will need to have its own unique URL where you can see comments on the book. Comments should be in order from the oldest to the newest. On book listing pages (the main page and the category pages), the number of comments should be listed with the book.
